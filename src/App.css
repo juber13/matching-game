@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+
+.home-container {
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: relative;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.monkey-image-container {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  text-align: center;
+}
+
+.monkey img {
+  width: 450px;
+  display: block;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  position: relative;
+  z-index: -1;
+}
+
+.message-text {
+  position: absolute;
+  top: 30%;
+  color: #11aec6;
+  font-size: 22px;
+}
+
+.start-btn-container {
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+}
+
+.progress {
+  position: relative;
+  width: 100%;
+}
+
+.progress-bar {
+  width: 580px;
+  background: rgb(226, 242, 245);
+  height: 30px;
+  position: absolute;
+  left: 400%;
+  top: 20%;
+  border-radius: 20px;
+}
+
+.blank_banana {
+  width: 100px;
+  position: absolute;
+  left: 90%;
+  bottom: -100%;
+}
+
+.cards {
+  left: 20%;
+  bottom: 10%;
+  gap: 25px;
+}
+
+.card {
+  width: 400px;
+  height: 420px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.card {
+  color: red;
+  width: 300px;
+  position: relative;
+}
+
+.card .text {
+  font-size: 1.2rem;
+  color: #11aec6;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  margin-left: 1rem;
+  font-weight: 1000;
+}
+
+.text p {
+  color: #a6c930;
+  font-weight: 1000;
+}
+
+.card .desctioption img {
+  position: absolute;
+  left: 0;
+}
+
+.timer-container {
+  position: relative;
+  left: 180%;
+  font-size: 1.3rem;
+  color: #8ead28;
+  font-weight: bold;
+}
