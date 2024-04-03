@@ -22,7 +22,7 @@ function App() {
     { page: 1, element: <Intro goToNextPage={goToNextPage} goToPrevPage={goToPrevPage} /> },
     { page: 2, element: <Intro3 goToNextPage={goToNextPage} goToPrevPage={goToPrevPage} /> },
     { page: 3, element: <Instruction goToNextPage={goToNextPage} goToPrevPage={goToPrevPage} /> },
-    { page: 3, element: <Activity goToPrevPage={goToPrevPage} /> },
+    { page: 4, element: <Activity goToPrevPage={goToPrevPage} /> },
   ]
 
 

@@ -13,24 +13,20 @@ import NumberImageThree from '../assets/images/3.png'
 import pinkCardImage from '../assets/images/pinkCard (1).png'
 
 const Instructions = ({ goToNextPage, goToPrevPage }) => {
-    
-    return (
-        <div className='home-container'>
-            <div className="background">
-                <img src={bgImage} alt="" />
-            </div>
 
-            <div className="prev-image-container" style={{ position: "absolute", top: "3%", left: "2%", display: "inline" }}>
+    return (
+        <div className='activity-container'>
+            <div className="background"></div>
+
+            <div className="prev-image-container" style={{}}>
                 <div className='progress'>
                     <img src={prevBtnImage} alt="prev-btn-png" style={{ width: "100px" }} onClick={goToPrevPage} />
-                    <div className="progress-bar">
+                    <div className='progress-container'>
+                        <div className="progress-bar"></div>
                         <img src={BalnkBanana} alt="" className='blank_banana' />
                     </div>
                 </div>
             </div>
-
-
-
             <div className="cards monkey-image-container flex" >
                 <div className="card">
                     <div>
@@ -49,7 +45,6 @@ const Instructions = ({ goToNextPage, goToPrevPage }) => {
                 </div>
                 <div className="card">
                     <img src={blueCardImage} alt="" width={"200px"} />
-
                     <div className="desctioption flex">
                         <img src={NumberImageTwo} alt="" width={"50px"} />
 

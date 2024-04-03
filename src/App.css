@@ -1,22 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 
 .home-container {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
 .background {
   width: 100%;
   height: 100vh;
-  z-index: -1;
-  position: relative;
-}
-
-.background img {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+  background-image: url("./assets/images/bg1.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  overflow: hidden;
+  /* position: relative; */
+  position: absolute;
+  z-index: -1;
 }
 
 .monkey-image-container {
@@ -39,7 +37,6 @@
 
 .message {
   position: relative;
-  z-index: -1;
 }
 
 .message-text {
@@ -55,26 +52,39 @@
   bottom: 2%;
 }
 
+.prev-image-container {
+  width: 100%;
+  position: absolute;
+  top: 3%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
 .progress {
   position: relative;
-  width: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
 }
 
 .progress-bar {
   width: 580px;
   background: rgb(226, 242, 245);
   height: 30px;
-  position: absolute;
-  left: 400%;
-  top: 20%;
   border-radius: 20px;
+  position: relative;
 }
 
-.blank_banana {
-  width: 100px;
+img.blank_banana {
   position: absolute;
-  left: 90%;
-  bottom: -100%;
+  left: 95%;
+  width: 100px;
 }
 
 .cards {
@@ -115,12 +125,4 @@
 .card .desctioption img {
   position: absolute;
   left: 0;
-}
-
-.timer-container {
-  position: relative;
-  left: 180%;
-  font-size: 1.3rem;
-  color: #8ead28;
-  font-weight: bold;
 }

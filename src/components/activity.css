@@ -1,0 +1,95 @@
+.activity-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* .background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/bg1.png");
+  background-size: contain;
+  /* background-size: contain; */
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/bg1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.background img {
+  position: absolute;
+  top: 0;
+}
+
+.prev-image-container {
+  width: 100%;
+  position: absolute;
+  top: 3%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.progress {
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
+.timer-container {
+  width: 100%;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 580px;
+  background: rgb(226, 242, 245);
+  height: 30px;
+  border-radius: 20px;
+  position: relative;
+}
+
+img.blank_banana {
+  position: absolute;
+  left: 95%;
+  width: 100px;
+}
+
+.card-container {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 30%;
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style for the pink card container */
+.pink-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 0.4fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.pink-card-container img {
+  width: 110px;
+}
+
+.flip-card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
