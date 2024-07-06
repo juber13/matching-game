@@ -4,13 +4,6 @@
   position: relative;
 }
 
-/* .background {
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/images/bg1.png");
-  background-size: contain;
-  /* background-size: contain; */
-
 .background {
   width: 100%;
   height: 100%;
@@ -64,7 +57,6 @@ img.blank_banana {
   left: 95%;
   width: 100px;
 }
-
 .card-container {
   width: 100%;
   margin: 0 auto;
@@ -74,6 +66,7 @@ img.blank_banana {
   grid-template-columns: 0.3fr 0.3fr;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 
 /* Style for the pink card container */
@@ -82,14 +75,146 @@ img.blank_banana {
   grid-template-columns: repeat(3, 0.4fr);
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
-.pink-card-container img {
-  width: 110px;
+.thecard {
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  position: relative;
+  cursor: pointer;
 }
 
-.flip-card-inner {
+.active {
+  transform: rotateY(180deg);
+}
+
+.front-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.pink {
+  background-image: url("../assets/images/pinkCard.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.blue {
+  background-image: url("../assets/images/blueCard.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.back-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-image: url("../assets/images/plainpinkCard.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: rotateY(180deg);
+}
+
+.back-card img {
+  position: relative;
+  right: 10px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.active-bar {
+  width: 10%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 19px,
+    rgb(255, 207, 37) 19px,
+    rgb(255, 207, 37) 38px
+  );
+  background-color: rgb(252, 228, 146);
+  transition: all 0.4s ease;
+}
+
+
+
+.result-card {
+  width: 350px;
+  height: 350px;
+  background-color: #fff5d1;
+  box-shadow: 0 1px 0 1px #ffc977;
+  border-radius: 30px;
+  padding: 2rem 10px 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.topScore {
+  width: 420px;
+  position: absolute;
+  top: -40px;
+  z-index: 2;
+}
+
+.scoreText {
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  top: -20px;
+}
+
+p {
+  &:first-child {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &:last-child {
+    font-size: 2rem;
+  }
+}
+
+.monkeyImg {
+  margin-top: auto;
+  width: 180px;
+}
+
+.restartbtn {
+  width: 100%;
+  cursor: pointer;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* z-index: -1; */
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
 }

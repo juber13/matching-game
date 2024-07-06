@@ -4,6 +4,8 @@ import Home from './components/Home'
 import Intro from './components/Intro2';
 import Intro3 from './components/Intro3';
 import Instruction from './components/Instructions';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Result from './components/Result'
 
 import Activity from './components/Activity';
 
@@ -28,7 +30,13 @@ function App() {
 
   return (
     <div className='app'>
-      {Data[indexPage].element}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={Data[indexPage].element} />
+          <Route path='/result' element={<Result />} />
+        </Routes>
+      </BrowserRouter>
+
     </div>
   )
 }

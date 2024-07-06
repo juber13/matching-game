@@ -83,37 +83,35 @@
 
 img.blank_banana {
   position: absolute;
-  left: 95%;
+  left: 90%;
   width: 100px;
 }
 
 .cards {
-  left: 20%;
-  bottom: 10%;
+  left: 15%;
+  bottom: 8%;
   gap: 25px;
 }
 
-.card {
-  width: 400px;
-  height: 420px;
-  background-color: #fff;
-  border-radius: 50px;
-}
+
 
 .card {
   color: red;
-  width: 300px;
+  width: 280px;
+  height: 400px;
   position: relative;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 .card .text {
-  font-size: 1.2rem;
+  font-size: 0.89rem;
   color: #11aec6;
   font-weight: bold;
   text-align: center;
   width: 100%;
   padding: 1rem;
-  margin-left: 1rem;
+  margin-left: 1.3rem;
   font-weight: 1000;
 }
 
@@ -125,4 +123,6 @@ img.blank_banana {
 .card .desctioption img {
   position: absolute;
   left: 0;
+  top: 10%;
+  width: 50px;
 }
